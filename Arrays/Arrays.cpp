@@ -35,7 +35,11 @@ int main()
 		cout << "Element at index " << i << ": " << texts[i] << endl;
 	}
 
-
+	int multsOf12[13];
+	for (int i = 0; i < 13; i++) {
+		multsOf12[i] = i * 12;
+		cout << "12 times " << i << " is: " << multsOf12[i] << endl;
+	}
 
 
 	return 0;
