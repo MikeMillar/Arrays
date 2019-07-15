@@ -48,8 +48,11 @@ int main()
 		{"Mouse", "Squirrel", "Parrot"}
 	};
 
-	for (int i = 0; i < 2; i++) {
-		for (int j = 0; j < 3; j++) {
+	int animalsSize = sizeof(animals) / sizeof(string);
+	cout << "Total animals: " << animalsSize << endl;
+
+	for (int i = 0; i < sizeof(animals)/sizeof(animals[0]); i++) {
+		for (int j = 0; j < sizeof(animals[0])/sizeof(string); j++) {
 			cout << animals[i][j] << " " << flush;
 		}
 		cout << endl;
@@ -65,6 +68,17 @@ int main()
 		cout << endl;
 	}
 
+	int values[] = {4, 7, 3, 4, 8, 5};
+
+	int valuesSize = sizeof(values) / sizeof(int);
+	cout << valuesSize << endl;
+
+	for (int i = 0; i < valuesSize; i++) {
+		cout << values[i] << " " << flush;
+	}
+	cout << endl;
+
+	
 
 	return 0;
 }
